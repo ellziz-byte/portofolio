@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Bagian kepala halaman, ini tuh kayak otak halaman web kita. Di sini kita atur judul, bahasa, link ke file CSS, dan lainnya. -->
+
+  <meta charset="UTF-8">
+  <!-- Supaya halaman kita bisa menampilkan semua jenis karakter, bahkan yang aneh-aneh sekalipun. -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Ini biar halaman kita kompatibel sama Internet Explorer yang jadul-jadul itu. -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Supaya halaman kita enak dilihat di semua layar, baik HP kecil sampai monitor gede. -->
+
+  <title>Personal Portfolio</title>
+  <!-- Judul halaman yang muncul di tab browser. Kayak nama di depan rumah gitu. -->
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <!-- Ini buat ikon kecil di tab browser kita, biar kelihatan lebih keren dan profesional. -->
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Menghubungkan file CSS yang kita bikin sendiri, supaya tampilan halaman lebih kece. -->
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Kita mau pakai font "Poppins" dari Google Fonts, biar tulisannya lebih estetik. -->
+
+</head>
+
+<body>
+  <!-- Bagian tubuh halaman. Semua yang pengunjung lihat ada di sini! -->
+
+  <!-- #MAIN -->
+  <main>
+    <!-- Ini bagian utama halaman, kayak panggung utama di konser. -->
+
+    <!-- #SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <!-- Ini kotak di samping halaman yang isinya informasi penting kayak nama, foto, dll. -->
+
+      <div class="sidebar-info">
+        <!-- Kotak kecil yang isinya info dasar kita kayak nama dan jabatan. -->
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Nama Kamu" width="80">
+          <!-- Gambar avatar kita, kayak foto profil di medsos. Kalau gambar nggak muncul, teks "Nama Kamu" bakal muncul. -->
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Nama Kamu">Nama Kamu</h1>
+          <!-- Nama kita ditampilkan gede-gede di sini, dan kalau dihover, bakal kelihatan tooltip namanya. -->
+
+          <p class="title">Profesi</p>
+          <!-- Jabatan atau profesi kita, biar orang tahu kerjaan kita apa. -->
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <!-- Tombol yang kalau diklik bakal nunjukin info kontak kita lebih lanjut. -->
+
+          <ion-icon name="chevron-down"></ion-icon>
+          <!-- Ikon panah bawah dari Ionicons, biar lebih jelas tombolnya buat apa. -->
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+        <!-- Ini bagian yang bakal muncul kalau tombol di atas diklik. Isinya info kontak lengkap kita. -->
+
+        <div class="separator"></div>
+        <!-- Garis pemisah, biar kelihatan lebih rapi dan teratur. -->
+
+        <ul class="contacts-list">
+          <!-- Daftar kontak kita, kayak email, nomor telepon, dll. -->
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:emailkamu@gmail.com" class="contact-link">emailkamu@gmail.com</a>
+              <!-- Link yang kalau diklik langsung buka aplikasi email buat kirim pesan ke kita. -->
+            </div>
+          </li>
+
+          <!-- Kontak lain kayak telepon, ulang tahun, dan lokasi juga ditampilkan sama persis seperti di atas. -->
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Whatsapp</p>
+              <a href="tel:+62" class="contact-link">+62</a>
+              <!-- Klik link ini buat langsung nelpon kita dari ponsel. -->
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Tanggal lahir</p>
+              <time datetime="ulang-tahun-kamu">tgl lahir kamu</time>
+              <!-- Info tanggal lahir kita, siapa tahu ada yang mau kasih kejutan ulang tahun. -->
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Alamat</p>
+              <address>Kabupaten, Kecamatan</address>
+              <!-- Alamat kita ditampilkan di sini, biar orang tahu kita tinggal di mana. -->
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+        <!-- Garis pemisah kedua, biar lebih rapi. -->
+
+        <ul class="social-list">
+          <!-- Daftar link ke akun media sosial kita. -->
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <!-- Link ke Facebook kita. -->
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <!-- Link ke Twitter kita. -->
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <!-- Link ke Instagram kita. -->
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!-- Di sini kita bisa tambahin konten lain kalau mau. -->
+
+  </main>
+
+</body>
+
+</html>
